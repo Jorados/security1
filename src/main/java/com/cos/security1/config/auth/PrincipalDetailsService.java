@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 //시큐리티 설정에서 loginProcessingUrl("/login");
 //login요청이 오면 자동으로 UserDetailService 타입으로 Ioc되어있는 loadUserByUsername 함수가 실행된다.
+//loc --> 객체의 권한을 개발자가 아닌 스프링에게 넘기는 것
 @Service
 public class PrincipalDetailsService implements UserDetailsService {
 
